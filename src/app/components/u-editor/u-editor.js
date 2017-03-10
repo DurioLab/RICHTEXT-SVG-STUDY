@@ -88,9 +88,12 @@
 
 
 
-    input setSelectionRange()
+    execCommand  //所有命令是面向焦点元素  及selection的选取
+    
+    input setSelectionRange() //设置选取范围
 
 
+    document.activeElement  //当前获取焦点的元素
 
     */
 
@@ -136,10 +139,15 @@
                         // range.selectNodeContents(editor);
                         // sel.addRange(range);
 
+                        // elem.find('.input-elem').focus();
+                        $editor.focus();
+
                         document.execCommand('selectAll');
 
                         document.execCommand('bold');
                         document.execCommand('foreColor','red');
+
+                        console.log(document.activeElement);
 
                         // console.log(sel);
                         // console.log($editor.html());
