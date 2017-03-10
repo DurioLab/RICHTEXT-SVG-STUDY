@@ -1,0 +1,17 @@
+.am-editor-toolbar{
+	height: 50px;
+	width: 100%;
+	background-color: red;
+	border:1px solid red;
+	box-sizing: border-box;
+	line-height: 40px;
+}
+.am-editor-content{
+	height: 300px;
+	outline: none;
+	width: 100%;
+	border:1px solid red;
+	overflow: scroll;
+	padding: 8px;
+	box-sizing: border-box;
+}
